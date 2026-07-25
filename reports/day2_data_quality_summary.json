@@ -1,0 +1,867 @@
+{
+  "generated_at": "2026-07-22 19:15:16 BST",
+  "random_seed": 42,
+  "split_method": {
+    "description": "Deterministic group-aware approximate stratification using all 23 original predictors; ID and target excluded from profile key.",
+    "target_proportions": {
+      "train": 0.6,
+      "validation": 0.2,
+      "test": 0.2
+    },
+    "row_proportion_absolute_tolerance": 0.01,
+    "prevalence_absolute_tolerance": 0.005
+  },
+  "raw_files": {
+    "xls": {
+      "path": "data/raw/default of credit card clients.xls",
+      "sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933"
+    },
+    "zip": {
+      "path": "data/raw/default-of-credit-card-clients.zip",
+      "sha256": "56c885f84457f6680f8438f02bfcdac9579323d8a94465ee5f26e32baa727602"
+    }
+  },
+  "raw_workbook_structure": {
+    "rows_including_two_header_rows": 30002,
+    "columns": 25,
+    "sheet": "Data"
+  },
+  "dataset": {
+    "rows": 30000,
+    "columns": 25,
+    "column_names": ["ID", "LIMIT_BAL", "SEX", "EDUCATION", "MARRIAGE", "AGE", "PAY_0", "PAY_2", "PAY_3", "PAY_4", "PAY_5", "PAY_6", "BILL_AMT1", "BILL_AMT2", "BILL_AMT3", "BILL_AMT4", "BILL_AMT5", "BILL_AMT6", "PAY_AMT1", "PAY_AMT2", "PAY_AMT3", "PAY_AMT4", "PAY_AMT5", "PAY_AMT6", "DEFAULT_NEXT_MONTH"]
+  },
+  "data_types": {
+    "ID": "numeric",
+    "LIMIT_BAL": "numeric",
+    "SEX": "numeric",
+    "EDUCATION": "numeric",
+    "MARRIAGE": "numeric",
+    "AGE": "numeric",
+    "PAY_0": "numeric",
+    "PAY_2": "numeric",
+    "PAY_3": "numeric",
+    "PAY_4": "numeric",
+    "PAY_5": "numeric",
+    "PAY_6": "numeric",
+    "BILL_AMT1": "numeric",
+    "BILL_AMT2": "numeric",
+    "BILL_AMT3": "numeric",
+    "BILL_AMT4": "numeric",
+    "BILL_AMT5": "numeric",
+    "BILL_AMT6": "numeric",
+    "PAY_AMT1": "numeric",
+    "PAY_AMT2": "numeric",
+    "PAY_AMT3": "numeric",
+    "PAY_AMT4": "numeric",
+    "PAY_AMT5": "numeric",
+    "PAY_AMT6": "numeric",
+    "DEFAULT_NEXT_MONTH": "numeric"
+  },
+  "id_unique": true,
+  "exact_duplicate_rows_including_id": 0,
+  "exact_duplicate_rows_excluding_id": 35,
+  "predictor_profile_groups": 29944,
+  "duplicate_profile_groups": 52,
+  "rows_in_duplicate_profile_groups": 108,
+  "cross_split_duplicate_profile_groups": 0,
+  "rows_in_cross_split_duplicate_profile_groups": 0,
+  "missing_by_field": {
+    "ID": 0,
+    "LIMIT_BAL": 0,
+    "SEX": 0,
+    "EDUCATION": 0,
+    "MARRIAGE": 0,
+    "AGE": 0,
+    "PAY_0": 0,
+    "PAY_2": 0,
+    "PAY_3": 0,
+    "PAY_4": 0,
+    "PAY_5": 0,
+    "PAY_6": 0,
+    "BILL_AMT1": 0,
+    "BILL_AMT2": 0,
+    "BILL_AMT3": 0,
+    "BILL_AMT4": 0,
+    "BILL_AMT5": 0,
+    "BILL_AMT6": 0,
+    "PAY_AMT1": 0,
+    "PAY_AMT2": 0,
+    "PAY_AMT3": 0,
+    "PAY_AMT4": 0,
+    "PAY_AMT5": 0,
+    "PAY_AMT6": 0,
+    "DEFAULT_NEXT_MONTH": 0
+  },
+  "target_distribution_full_dataset_for_reporting": [
+    {
+      "target": "0",
+      "count": 23364,
+      "percentage": 77.88
+    },
+    {
+      "target": "1",
+      "count": 6636,
+      "percentage": 22.12
+    }
+  ],
+  "category_frequencies": [
+    {
+      "field": "SEX",
+      "value": "1",
+      "count": 11888,
+      "documented": true
+    },
+    {
+      "field": "SEX",
+      "value": "2",
+      "count": 18112,
+      "documented": true
+    },
+    {
+      "field": "EDUCATION",
+      "value": "0",
+      "count": 14,
+      "documented": false
+    },
+    {
+      "field": "EDUCATION",
+      "value": "1",
+      "count": 10585,
+      "documented": true
+    },
+    {
+      "field": "EDUCATION",
+      "value": "2",
+      "count": 14030,
+      "documented": true
+    },
+    {
+      "field": "EDUCATION",
+      "value": "3",
+      "count": 4917,
+      "documented": true
+    },
+    {
+      "field": "EDUCATION",
+      "value": "4",
+      "count": 123,
+      "documented": true
+    },
+    {
+      "field": "EDUCATION",
+      "value": "5",
+      "count": 280,
+      "documented": false
+    },
+    {
+      "field": "EDUCATION",
+      "value": "6",
+      "count": 51,
+      "documented": false
+    },
+    {
+      "field": "MARRIAGE",
+      "value": "0",
+      "count": 54,
+      "documented": false
+    },
+    {
+      "field": "MARRIAGE",
+      "value": "1",
+      "count": 13659,
+      "documented": true
+    },
+    {
+      "field": "MARRIAGE",
+      "value": "2",
+      "count": 15964,
+      "documented": true
+    },
+    {
+      "field": "MARRIAGE",
+      "value": "3",
+      "count": 323,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "-2",
+      "count": 2759,
+      "documented": false
+    },
+    {
+      "field": "PAY_0",
+      "value": "-1",
+      "count": 5686,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "0",
+      "count": 14737,
+      "documented": false
+    },
+    {
+      "field": "PAY_0",
+      "value": "1",
+      "count": 3688,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "2",
+      "count": 2667,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "3",
+      "count": 322,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "4",
+      "count": 76,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "5",
+      "count": 26,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "6",
+      "count": 11,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "7",
+      "count": 9,
+      "documented": true
+    },
+    {
+      "field": "PAY_0",
+      "value": "8",
+      "count": 19,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "-2",
+      "count": 3782,
+      "documented": false
+    },
+    {
+      "field": "PAY_2",
+      "value": "-1",
+      "count": 6050,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "0",
+      "count": 15730,
+      "documented": false
+    },
+    {
+      "field": "PAY_2",
+      "value": "1",
+      "count": 28,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "2",
+      "count": 3927,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "3",
+      "count": 326,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "4",
+      "count": 99,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "5",
+      "count": 25,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "6",
+      "count": 12,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "7",
+      "count": 20,
+      "documented": true
+    },
+    {
+      "field": "PAY_2",
+      "value": "8",
+      "count": 1,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "-2",
+      "count": 4085,
+      "documented": false
+    },
+    {
+      "field": "PAY_3",
+      "value": "-1",
+      "count": 5938,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "0",
+      "count": 15764,
+      "documented": false
+    },
+    {
+      "field": "PAY_3",
+      "value": "1",
+      "count": 4,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "2",
+      "count": 3819,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "3",
+      "count": 240,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "4",
+      "count": 76,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "5",
+      "count": 21,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "6",
+      "count": 23,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "7",
+      "count": 27,
+      "documented": true
+    },
+    {
+      "field": "PAY_3",
+      "value": "8",
+      "count": 3,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "-2",
+      "count": 4348,
+      "documented": false
+    },
+    {
+      "field": "PAY_4",
+      "value": "-1",
+      "count": 5687,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "0",
+      "count": 16455,
+      "documented": false
+    },
+    {
+      "field": "PAY_4",
+      "value": "1",
+      "count": 2,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "2",
+      "count": 3159,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "3",
+      "count": 180,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "4",
+      "count": 69,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "5",
+      "count": 35,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "6",
+      "count": 5,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "7",
+      "count": 58,
+      "documented": true
+    },
+    {
+      "field": "PAY_4",
+      "value": "8",
+      "count": 2,
+      "documented": true
+    },
+    {
+      "field": "PAY_5",
+      "value": "-2",
+      "count": 4546,
+      "documented": false
+    },
+    {
+      "field": "PAY_5",
+      "value": "-1",
+      "count": 5539,
+      "documented": true
+    },
+    {
+      "field": "PAY_5",
+      "value": "0",
+      "count": 16947,
+      "documented": false
+    },
+    {
+      "field": "PAY_5",
+      "value": "2",
+      "count": 2626,
+      "documented": true
+    },
+    {
+      "field": "PAY_5",
+      "value": "3",
+      "count": 178,
+      "documented": true
+    },
+    {
+      "field": "PAY_5",
+      "value": "4",
+      "count": 84,
+      "documented": true
+    },
+    {
+      "field": "PAY_5",
+      "value": "5",
+      "count": 17,
+      "documented": true
+    },
+    {
+      "field": "PAY_5",
+      "value": "6",
+      "count": 4,
+      "documented": true
+    },
+    {
+      "field": "PAY_5",
+      "value": "7",
+      "count": 58,
+      "documented": true
+    },
+    {
+      "field": "PAY_5",
+      "value": "8",
+      "count": 1,
+      "documented": true
+    },
+    {
+      "field": "PAY_6",
+      "value": "-2",
+      "count": 4895,
+      "documented": false
+    },
+    {
+      "field": "PAY_6",
+      "value": "-1",
+      "count": 5740,
+      "documented": true
+    },
+    {
+      "field": "PAY_6",
+      "value": "0",
+      "count": 16286,
+      "documented": false
+    },
+    {
+      "field": "PAY_6",
+      "value": "2",
+      "count": 2766,
+      "documented": true
+    },
+    {
+      "field": "PAY_6",
+      "value": "3",
+      "count": 184,
+      "documented": true
+    },
+    {
+      "field": "PAY_6",
+      "value": "4",
+      "count": 49,
+      "documented": true
+    },
+    {
+      "field": "PAY_6",
+      "value": "5",
+      "count": 13,
+      "documented": true
+    },
+    {
+      "field": "PAY_6",
+      "value": "6",
+      "count": 19,
+      "documented": true
+    },
+    {
+      "field": "PAY_6",
+      "value": "7",
+      "count": 46,
+      "documented": true
+    },
+    {
+      "field": "PAY_6",
+      "value": "8",
+      "count": 2,
+      "documented": true
+    }
+  ],
+  "undocumented_category_frequencies": [
+    {
+      "field": "EDUCATION",
+      "value": "0",
+      "count": 14,
+      "documented": false
+    },
+    {
+      "field": "EDUCATION",
+      "value": "5",
+      "count": 280,
+      "documented": false
+    },
+    {
+      "field": "EDUCATION",
+      "value": "6",
+      "count": 51,
+      "documented": false
+    },
+    {
+      "field": "MARRIAGE",
+      "value": "0",
+      "count": 54,
+      "documented": false
+    },
+    {
+      "field": "PAY_0",
+      "value": "-2",
+      "count": 2759,
+      "documented": false
+    },
+    {
+      "field": "PAY_0",
+      "value": "0",
+      "count": 14737,
+      "documented": false
+    },
+    {
+      "field": "PAY_2",
+      "value": "-2",
+      "count": 3782,
+      "documented": false
+    },
+    {
+      "field": "PAY_2",
+      "value": "0",
+      "count": 15730,
+      "documented": false
+    },
+    {
+      "field": "PAY_3",
+      "value": "-2",
+      "count": 4085,
+      "documented": false
+    },
+    {
+      "field": "PAY_3",
+      "value": "0",
+      "count": 15764,
+      "documented": false
+    },
+    {
+      "field": "PAY_4",
+      "value": "-2",
+      "count": 4348,
+      "documented": false
+    },
+    {
+      "field": "PAY_4",
+      "value": "0",
+      "count": 16455,
+      "documented": false
+    },
+    {
+      "field": "PAY_5",
+      "value": "-2",
+      "count": 4546,
+      "documented": false
+    },
+    {
+      "field": "PAY_5",
+      "value": "0",
+      "count": 16947,
+      "documented": false
+    },
+    {
+      "field": "PAY_6",
+      "value": "-2",
+      "count": 4895,
+      "documented": false
+    },
+    {
+      "field": "PAY_6",
+      "value": "0",
+      "count": 16286,
+      "documented": false
+    }
+  ],
+  "numeric_ranges": [
+    {
+      "field": "LIMIT_BAL",
+      "minimum": 10000,
+      "q1": 50000,
+      "median": 140000,
+      "q3": 240000,
+      "maximum": 1000000
+    },
+    {
+      "field": "AGE",
+      "minimum": 21,
+      "q1": 28,
+      "median": 34,
+      "q3": 41,
+      "maximum": 79
+    },
+    {
+      "field": "BILL_AMT1",
+      "minimum": -165580,
+      "q1": 3558.75,
+      "median": 22381.5,
+      "q3": 67091,
+      "maximum": 964511
+    },
+    {
+      "field": "BILL_AMT2",
+      "minimum": -69777,
+      "q1": 2984.75,
+      "median": 21200,
+      "q3": 64006.25,
+      "maximum": 983931
+    },
+    {
+      "field": "BILL_AMT3",
+      "minimum": -157264,
+      "q1": 2666.25,
+      "median": 20088.5,
+      "q3": 60164.75,
+      "maximum": 1664089
+    },
+    {
+      "field": "BILL_AMT4",
+      "minimum": -170000,
+      "q1": 2326.75,
+      "median": 19052,
+      "q3": 54506,
+      "maximum": 891586
+    },
+    {
+      "field": "BILL_AMT5",
+      "minimum": -81334,
+      "q1": 1763,
+      "median": 18104.5,
+      "q3": 50190.5,
+      "maximum": 927171
+    },
+    {
+      "field": "BILL_AMT6",
+      "minimum": -339603,
+      "q1": 1256,
+      "median": 17071,
+      "q3": 49198.25,
+      "maximum": 961664
+    },
+    {
+      "field": "PAY_AMT1",
+      "minimum": 0,
+      "q1": 1000,
+      "median": 2100,
+      "q3": 5006,
+      "maximum": 873552
+    },
+    {
+      "field": "PAY_AMT2",
+      "minimum": 0,
+      "q1": 833,
+      "median": 2009,
+      "q3": 5000,
+      "maximum": 1684259
+    },
+    {
+      "field": "PAY_AMT3",
+      "minimum": 0,
+      "q1": 390,
+      "median": 1800,
+      "q3": 4505,
+      "maximum": 896040
+    },
+    {
+      "field": "PAY_AMT4",
+      "minimum": 0,
+      "q1": 296,
+      "median": 1500,
+      "q3": 4013.25,
+      "maximum": 621000
+    },
+    {
+      "field": "PAY_AMT5",
+      "minimum": 0,
+      "q1": 252.5,
+      "median": 1500,
+      "q3": 4031.5,
+      "maximum": 426529
+    },
+    {
+      "field": "PAY_AMT6",
+      "minimum": 0,
+      "q1": 117.75,
+      "median": 1500,
+      "q3": 4000,
+      "maximum": 528666
+    }
+  ],
+  "anomaly_counts": {
+    "non_positive_credit_limits": 0,
+    "age_outside_18_to_100": 0,
+    "negative_bill_amounts_by_field": {
+      "BILL_AMT1": 590,
+      "BILL_AMT2": 669,
+      "BILL_AMT3": 655,
+      "BILL_AMT4": 675,
+      "BILL_AMT5": 655,
+      "BILL_AMT6": 688
+    },
+    "zero_bill_amounts_by_field": {
+      "BILL_AMT1": 2008,
+      "BILL_AMT2": 2506,
+      "BILL_AMT3": 2870,
+      "BILL_AMT4": 3195,
+      "BILL_AMT5": 3506,
+      "BILL_AMT6": 4020
+    },
+    "negative_payment_amounts_by_field": {
+      "PAY_AMT1": 0,
+      "PAY_AMT2": 0,
+      "PAY_AMT3": 0,
+      "PAY_AMT4": 0,
+      "PAY_AMT5": 0,
+      "PAY_AMT6": 0
+    },
+    "zero_payment_amounts_by_field": {
+      "PAY_AMT1": 5249,
+      "PAY_AMT2": 5396,
+      "PAY_AMT3": 5968,
+      "PAY_AMT4": 6408,
+      "PAY_AMT5": 6703,
+      "PAY_AMT6": 7173
+    }
+  },
+  "split_balance_integrity_audit": [
+    {
+      "split": "test",
+      "target": "0",
+      "count": 4673,
+      "split_total": 6000,
+      "percentage": 77.8833
+    },
+    {
+      "split": "test",
+      "target": "1",
+      "count": 1327,
+      "split_total": 6000,
+      "percentage": 22.1167
+    },
+    {
+      "split": "train",
+      "target": "0",
+      "count": 14018,
+      "split_total": 18000,
+      "percentage": 77.8778
+    },
+    {
+      "split": "train",
+      "target": "1",
+      "count": 3982,
+      "split_total": 18000,
+      "percentage": 22.1222
+    },
+    {
+      "split": "validation",
+      "target": "0",
+      "count": 4673,
+      "split_total": 6000,
+      "percentage": 77.8833
+    },
+    {
+      "split": "validation",
+      "target": "1",
+      "count": 1327,
+      "split_total": 6000,
+      "percentage": 22.1167
+    }
+  ],
+  "final_test_label_policy": "Test labels used only to create and mechanically verify stratification; not used for exploratory feature or design decisions.",
+  "primary_feature_exclusions": ["ID", "SEX", "AGE", "MARRIAGE", "EDUCATION"],
+  "figures": ["reports/figures/day2_training_target_balance.png", "reports/figures/day2_repayment_code_frequencies.png", "reports/figures/day2_audit_category_frequencies.png"]
+}

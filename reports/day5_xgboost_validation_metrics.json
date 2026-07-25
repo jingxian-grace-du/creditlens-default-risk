@@ -1,0 +1,66 @@
+{
+  "ap_improvement_description": "negligible",
+  "ap_improvement_over_random_forest": -0.003336209474033791,
+  "average_precision": 0.5366433171661142,
+  "best_cv_average_precision": 0.5626991981018851,
+  "best_cv_roc_auc": 0.786319041888804,
+  "confusion_matrix_at_0_5": {
+    "labels": [
+      0,
+      1
+    ],
+    "layout": "[[true_negative, false_positive], [false_negative, true_positive]]",
+    "values": [
+      [
+        3676,
+        997
+      ],
+      [
+        506,
+        821
+      ]
+    ]
+  },
+  "cv_folds": 4,
+  "encoded_feature_count": 76,
+  "f1_at_0_5": 0.5220985691573927,
+  "fitted_candidates": 48,
+  "fixed_configuration": {
+    "eval_metric": "logloss",
+    "n_jobs": -1,
+    "objective": "binary:logistic",
+    "random_state": 42,
+    "tree_method": "hist"
+  },
+  "model": "XGBoost",
+  "partition": "validation",
+  "precision_at_0_5": 0.4515951595159516,
+  "primary_search_metric": "average_precision",
+  "proportion_flagged_at_0_5": 0.303,
+  "recall_at_0_5": 0.6186887716654107,
+  "reporting_threshold": 0.5,
+  "roc_auc": 0.7717920823677071,
+  "search_iterations": 12,
+  "search_seconds": 669.4376872139983,
+  "search_warnings": [],
+  "selected_hyperparameters": {
+    "colsample_bytree": 0.85,
+    "gamma": 0.0,
+    "learning_rate": 0.03,
+    "max_depth": 3,
+    "min_child_weight": 1,
+    "n_estimators": 600,
+    "reg_lambda": 10.0,
+    "scale_pos_weight": 3.5,
+    "subsample": 0.85
+  },
+  "source_feature_count": 19,
+  "test_partition_evaluated": false,
+  "threshold_selected": false,
+  "threshold_status": "Baseline reporting only; not an operating threshold.",
+  "total_workflow_seconds": 708.3896831099992,
+  "training_rows": 18000,
+  "validation_rows": 6000,
+  "validation_used_for_hyperparameter_selection": false,
+  "xgboost_version": "2.1.4"
+}

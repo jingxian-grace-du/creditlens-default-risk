@@ -1,0 +1,54 @@
+{
+  "average_precision": 0.539979526640148,
+  "confusion_matrix_at_0_5": {
+    "labels": [
+      0,
+      1
+    ],
+    "layout": "[[true_negative, false_positive], [false_negative, true_positive]]",
+    "values": [
+      [
+        4440,
+        233
+      ],
+      [
+        871,
+        456
+      ]
+    ]
+  },
+  "cv_folds": 4,
+  "encoded_feature_count": 76,
+  "f1_at_0_5": 0.4523809523809524,
+  "fitted_candidates": 48,
+  "model": "Random Forest",
+  "partition": "validation",
+  "precision_at_0_5": 0.6618287373004355,
+  "primary_search_metric": "average_precision",
+  "proportion_flagged_at_0_5": 0.11483333333333333,
+  "recall_at_0_5": 0.3436322532027129,
+  "reporting_threshold": 0.5,
+  "resource_notes": [
+    "Initial sparse-input search attempt was interrupted for excessive runtime before validation.",
+    "Completed dense-input search was retained; post-search permutation importance resumed serially after sandbox process creation was denied."
+  ],
+  "roc_auc": 0.77191665762253,
+  "search_iterations": 12,
+  "search_seconds": 1144.9660052440013,
+  "search_warnings": [],
+  "selected_hyperparameters": {
+    "class_weight": null,
+    "max_depth": 20,
+    "max_features": "sqrt",
+    "min_samples_leaf": 10,
+    "min_samples_split": 2,
+    "n_estimators": 300
+  },
+  "source_feature_count": 19,
+  "test_partition_evaluated": false,
+  "threshold_status": "Baseline reporting only; not an operating threshold.",
+  "total_workflow_seconds": 1187.8722706099943,
+  "training_rows": 18000,
+  "validation_rows": 6000,
+  "validation_used_for_hyperparameter_selection": false
+}

@@ -1,0 +1,53 @@
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Python environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter and editor artefacts
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+*~
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Packaging and temporary files
+build/
+dist/
+*.egg-info/
+*.tmp
+*.temp
+*.log
+
+# UCI source files and reproducible large derived data are acquired locally.
+# Keep data/README.md and the approved split assignments in the public commit.
+/data/raw/
+/data/processed/*
+!/data/processed/split_assignments.csv
+
+# Incomplete zero-byte placeholder; use the completed Day 6 notebook instead.
+/notebooks/03_explainability.ipynb
+
+# General row-level prediction outputs are never public release artefacts.
+/reports/predictions/
+/reports/*predictions*.csv
+/data/processed/*predictions*.csv
+
+# Interrupted downloads
+*.part
+*.download

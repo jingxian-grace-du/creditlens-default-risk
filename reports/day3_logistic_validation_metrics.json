@@ -1,0 +1,43 @@
+{
+  "average_precision": 0.519470900444617,
+  "configuration": {
+    "C": 1.0,
+    "class_weight": null,
+    "max_iter": 1000,
+    "penalty": "l2",
+    "random_state": 42,
+    "solver": "liblinear"
+  },
+  "confusion_matrix_at_0_5": {
+    "labels": [
+      0,
+      1
+    ],
+    "layout": "[[true_negative, false_positive], [false_negative, true_positive]]",
+    "values": [
+      [
+        4449,
+        224
+      ],
+      [
+        873,
+        454
+      ]
+    ]
+  },
+  "convergence_warnings": [],
+  "encoded_feature_count": 76,
+  "f1_at_0_5": 0.45286783042394013,
+  "model": "Logistic Regression",
+  "partition": "validation",
+  "precision_at_0_5": 0.6696165191740413,
+  "proportion_flagged_at_0_5": 0.113,
+  "recall_at_0_5": 0.3421250941974378,
+  "reporting_threshold": 0.5,
+  "roc_auc": 0.7544054889873056,
+  "source_feature_count": 19,
+  "test_partition_evaluated": false,
+  "threshold_status": "Baseline reporting only; not an operating threshold.",
+  "training_rows": 18000,
+  "validation_rows": 6000
+}

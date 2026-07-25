@@ -1,0 +1,55 @@
+{
+  "best_cv_average_precision": 0.5608639771464183,
+  "cv_folds": 4,
+  "cv_group_audit": [
+    {
+      "fit_groups": 13500,
+      "fit_rows": 13500,
+      "fold": 1,
+      "overlapping_groups": 0,
+      "validation_groups": 4500,
+      "validation_rows": 4500
+    },
+    {
+      "fit_groups": 13500,
+      "fit_rows": 13500,
+      "fold": 2,
+      "overlapping_groups": 0,
+      "validation_groups": 4500,
+      "validation_rows": 4500
+    },
+    {
+      "fit_groups": 13500,
+      "fit_rows": 13500,
+      "fold": 3,
+      "overlapping_groups": 0,
+      "validation_groups": 4500,
+      "validation_rows": 4500
+    },
+    {
+      "fit_groups": 13500,
+      "fit_rows": 13500,
+      "fold": 4,
+      "overlapping_groups": 0,
+      "validation_groups": 4500,
+      "validation_rows": 4500
+    }
+  ],
+  "fitted_candidates": 48,
+  "primary_scoring": "average_precision",
+  "random_state": 42,
+  "search_iterations": 12,
+  "search_partition": "training",
+  "search_seconds": 1144.9660052440013,
+  "search_warnings": [],
+  "secondary_scoring": "roc_auc",
+  "selected_hyperparameters": {
+    "class_weight": null,
+    "max_depth": 20,
+    "max_features": "sqrt",
+    "min_samples_leaf": 10,
+    "min_samples_split": 2,
+    "n_estimators": 300
+  },
+  "validation_used_for_selection": false
+}

@@ -1,0 +1,43 @@
+{
+  "analysis_partition": "validation",
+  "case_labels": [
+    "true_positive",
+    "false_positive",
+    "false_negative"
+  ],
+  "final_test_evaluated": false,
+  "final_test_outcomes_materialised": false,
+  "global_shap_sample_rows": 1000,
+  "global_shap_sampling": "deterministic class-stratified validation sample",
+  "operating_threshold": 0.1912638431828811,
+  "paired_uncertainty_interval_includes_zero": true,
+  "provisional_primary_candidate": "Random Forest",
+  "random_forest_validation_average_precision": 0.539979526640148,
+  "runtime_seconds": 323.0294469689834,
+  "selection_basis": "highest validation Average Precision",
+  "shap_version": "0.46.0",
+  "superiority_claimed": false,
+  "threshold_confusion_matrix": {
+    "labels": [
+      0,
+      1
+    ],
+    "layout": "[[true_negative, false_positive], [false_negative, true_positive]]",
+    "values": [
+      [
+        3341,
+        1332
+      ],
+      [
+        398,
+        929
+      ]
+    ]
+  },
+  "threshold_f1": 0.5178372352285395,
+  "threshold_false_positive_rate": 0.2850417290819602,
+  "threshold_precision": 0.41088014153029634,
+  "threshold_proportion_flagged": 0.37683333333333335,
+  "threshold_recall": 0.7000753579502638,
+  "xgboost_validation_average_precision": 0.5366433171661142
+}

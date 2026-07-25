@@ -1,0 +1,17 @@
+{
+  "created_before_final_test_outcomes_loaded": true,
+  "final_test_evaluation_authorised": true,
+  "frozen_model_path": "models/day4_random_forest_pipeline.joblib",
+  "frozen_model_sha256": "1d52eed5ae717e3e0bc09d319362263fcebcfb9f691a23951df32ac5c935037e",
+  "frozen_preprocessing": "The preprocessing embedded in the frozen Random Forest pipeline is immutable.",
+  "frozen_threshold": 0.1912638431828811,
+  "lock_date": "2026-07-24",
+  "no_superiority_claim": true,
+  "paired_rf_minus_xgboost_ap_uncertainty_interval": [
+    -0.0075220545,
+    0.0137943885
+  ],
+  "post_test_change_prohibition": "After final-test results are viewed, the model, threshold and preprocessing must not be changed, refitted, tuned, recalibrated or selected again.",
+  "selection_basis": "highest numerical validation Average Precision",
+  "status": "locked before one-time final-test evaluation"
+}

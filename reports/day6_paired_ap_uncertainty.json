@@ -1,0 +1,12 @@
+{
+  "ap_difference_random_forest_minus_xgboost": 0.003336209474033791,
+  "confidence_interval_lower": -0.00752205450465176,
+  "confidence_interval_upper": 0.013794388481294936,
+  "confidence_level": 0.95,
+  "interpretation": "uncertain/negligible; no superiority claim",
+  "interval_includes_zero": true,
+  "iterations": 2000,
+  "method": "paired stratified percentile bootstrap",
+  "proportion_bootstrap_differences_above_zero": 0.7265,
+  "random_state": 42
+}

@@ -1,0 +1,4 @@
+model,roc_auc,average_precision,selection_status
+Random Forest,0.77191665762253,0.539979526640148,provisional primary candidate
+XGBoost,0.7717920823677071,0.5366433171661142,comparison model
+Logistic Regression,0.7544054889873056,0.519470900444617,comparison model

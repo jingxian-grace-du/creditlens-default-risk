@@ -1,0 +1,26 @@
+[
+  {
+    "actual_class": 1,
+    "case_label": "true_positive",
+    "predicted_class": 1,
+    "predicted_probability": 0.8792379329340847,
+    "selection_method": "highest score in category",
+    "threshold": 0.1912638431828811
+  },
+  {
+    "actual_class": 0,
+    "case_label": "false_positive",
+    "predicted_class": 1,
+    "predicted_probability": 0.8477197357284862,
+    "selection_method": "highest score in category",
+    "threshold": 0.1912638431828811
+  },
+  {
+    "actual_class": 1,
+    "case_label": "false_negative",
+    "predicted_class": 0,
+    "predicted_probability": 0.022590657983030185,
+    "selection_method": "lowest score in category",
+    "threshold": 0.1912638431828811
+  }
+]
